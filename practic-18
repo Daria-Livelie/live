@@ -1,0 +1,15 @@
+const phoneBook = {
+    "Max" : 89112356783,
+    "Lika" : 89113124576,
+}
+const copyPhoneBook = phoneBook;
+copyPhoneBook['Nikita']="89113489213"
+console.log(phoneBook); 
+
+//Копирование
+const original = { name: "Livelie" };
+const copy = structuredClone(original);
+console.log(copy !== original);
+console.log(copy.name);
+original.name = "Живая ложь";
+console.log(copy.name);
